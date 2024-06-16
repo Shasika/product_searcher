@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "6b109af3cfc78fb5c05fde6f02c247b7"
+name = "PRODUCT SEARCHER"
+handle = "qr-46"
+application_url = "https://magnificent-arising-department-technician.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "quickstart-4eb13a2e.myshopify.com"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_products"
+
+[auth]
+redirect_urls = [
+  "https://magnificent-arising-department-technician.trycloudflare.com/auth/callback",
+  "https://magnificent-arising-department-technician.trycloudflare.com/auth/shopify/callback",
+  "https://magnificent-arising-department-technician.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-04"
+
+[pos]
+embedded = false
